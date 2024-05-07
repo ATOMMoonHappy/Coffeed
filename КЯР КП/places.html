@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/places.css">
+    <script defer src="js/places.js"></script>
+    <title>Coffeed</title>
+</head>
+<body>
+<!-- Код для хедера -->
+    <header>
+        <img src="images/logo.jpg">
+        <h3>Coffeed</h3>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#photogallery">Фотогаллерея</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="places.html">Места в Минске</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+        <button class="burger-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <main>
+        <div id="buttons">
+            <button onclick="showImages(this)" class="active" id="ch">Список</button>
+            <button onclick="showMap(this)" id="ch">На карте</button>
+        </div>
+
+        <div class="images">
+            <!-- Здесь будут div элементы с адресами -->
+            <div>
+                <img src="images/photo1.jpg" alt="Адрес 1">
+                <p>ул. Денисовская, 8.<br> ТЦ "Корона сити"</p>
+            </div>
+            <div>
+                <img src="images/photo2.jpg" alt="Адрес 2">
+                <p>пр. Рокоссовского, 80</p>
+            </div>
+            <div>
+                <img src="images/photo3.jpg" alt="Адрес 3">
+                <p>ул. Ленина, 4</p>
+            </div>
+            <div>
+                <img src="images/photo4.jpg" alt="Адрес 4">
+                <p>пр. Независимости, 9.<br> ТЦ "Dana Mall"</p>
+            </div>
+
+            <div>
+                <img src="images/photo5.jpg" alt="Адрес 5">
+                <p>ул. Тимирязева, 74А.<br> ТЦ "Palazzo"</p>
+            </div>
+            <div>
+                <img src="images/photo6.jpg" alt="Адрес 6">
+                <p>пр. Победителей, 84.<br> ТЦ "Arena City"</p>
+            </div>
+            <div>
+                <img src="images/photo7.jpg" alt="Адрес 7">
+                <p>ул. Притыцкого 148</p>
+            </div>
+            <div>
+                <img src="images/photo8.jpg" alt="Адрес 8">
+                <p>пр. Дзержинского 126</p>
+            </div>
+            <!-- Добавьте больше адресов по аналогии -->
+        </div>
+
+        <div id="map" style="display: none;">
+            <!-- Здесь будет карта -->
+            <h4>Карта кофеен сети "Coffeed"</h4>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4c7458aee77628378c126d512c240b7b97ebfc491aef58dd33efc57396cc712e&amp;width=763&amp;height=427&amp;lang=ru_RU&amp;scroll=true"></script>        
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            2024 ОАО "Кофеёк"<br>
+            220094 г.Минск<br>
+            пр. Рокоссовского 49<br>
+            +375291234567<br>
+            andreymay009@gmail.com<br>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Наверх">
+        <svg fill="#ffffff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.256 23.481c0 0.269 0.106 0.544 0.313 0.75 0.412 0.413 1.087 0.413 1.5 0l14.119-14.119 13.913 13.912c0.413 0.413 1.087 0.413 1.5 0s0.413-1.087 0-1.5l-14.663-14.669c-0.413-0.412-1.088-0.412-1.5 0l-14.869 14.869c-0.213 0.212-0.313 0.481-0.313 0.756z"></path>
+        </svg>
+    </button>
+</body>
+</html>

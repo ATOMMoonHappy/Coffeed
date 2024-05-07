@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("font/Gilroy-RegularItalic.woff");
+}
+
+html {
+    font-family: Gilroy;
+    color: #242C30;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header's styles */
+header {
+    width: 100vw;
+    height: 120px;
+    background-color: #f3f2e0;
+    position: fixed;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3 {
+    font-size: 40px;
+    color: #242C30;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px 10px 20px;
+}
+
+header ul {
+    height: 100%;
+    width: 75vw;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #865B44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    flex: 1;
+    transition: all 0.3s;
+    margin-right: 15px;
+}
+header ul li a{
+    display: block;
+    color: #f3f2e0;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+header li a:hover {
+    background-color: #242C30;
+    transform: scale(1.2);
+}
+
+h3 a {
+    text-decoration: none;
+    color: #242C30;
+}
+
+h3 a:visited {
+    text-decoration: none;
+    color: #242C30;
+}
+
+.burger-btn {
+    display: none; /* Скрываем кнопку на больших экранах */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #f3f2e0;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 1300px) {
+    .burger-btn {
+        display: block;
+        margin-right: 50px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header {
+        background-color: #865B44;
+        
+    }
+
+    header h3, header h3 a {
+        color: #f3f2e0 !important; /* Принудительное применение цвета */
+    }
+    header ul {
+        position: fixed;
+        top: 120px; /* Высота шапки */
+        left: -100%; /* Скрываем меню за пределы экрана */
+        flex-direction: column;
+        width: 100%;
+        max-height: 88vh; /* Оставляем место для шапки */
+        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
+        transition: 0.3s;
+        z-index: 1; /* Убедитесь, что меню под кнопкой */
+        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    header ul li a {
+        font-size: 5vw;
+    }
+}
+
+
+
+/* main's styles */
+main {
+    margin-top: 120px; /* чтобы контент не перекрывался header */
+    padding: 20px 0;
+    background-color: #f3f2e0;
+    background-size: cover;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 40px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid #242C30;
+    width: 80vw;
+    align-items: center;
+}
+
+
+
+.stroka1, .stroka2, .stroka3, .subscribe-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+form input[type="text"], form input[type="email"], form input[type="date"], form input[type="tel"], form button {
+    width: 60vw;
+    height: 5vh;
+    font-size: 24px;
+    margin: 8px 0; /* Добавляем немного маргина сверху и снизу для каждого элемента */
+}
+label {
+    margin-top: 20px; /* Добавляем пространство перед каждым label */
+    font-size: 30px;
+}
+.subscribe-row {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.subscribe-text {
+    margin-left: 10px; /* Добавляем пространство между чекбоксом и текстом */
+}
+
+
+form button {
+    background-color: #865B44;
+    color: #f3f2e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 40px 20px 40px;
+    font-size: 30px;
+    height: 10vh;
+}
+
+form button:hover {
+    background-color: #242C30;
+    transform: scale(1.02);
+}
+
+.subscribe-row {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    align-self: center;
+}
+
+.subscribe-row input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+.subscribe-row .subscribe-text {
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+/* footer's styles */
+footer {
+    width: inherit;
+    height: 150px;
+    background-color: #242C30;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+}
+
+footer p{
+    color:#f3f2e0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #242C30;
+    color: #f3f2e0;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#scrollToTopButton:hover {
+    background-color: #555;
+}

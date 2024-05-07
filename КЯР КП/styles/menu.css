@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("font/Gilroy-RegularItalic.woff");
+}
+
+html {
+    font-family: Gilroy;
+    color: #242C30;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header's styles */
+header {
+    width: 100vw;
+    height: 120px;
+    background-color: #f3f2e0;
+    position: fixed;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3 {
+    font-size: 40px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px 10px 20px;
+}
+
+header ul {
+    height: 100%;
+    width: 75vw;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #865B44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    flex: 1;
+    transition: all 0.3s;
+    margin-right: 15px;
+}
+header ul li a{
+    display: block;
+    color: #f3f2e0;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+header li a:hover {
+    background-color: #242C30;
+    transform: scale(1.2);
+}
+
+.burger-btn {
+    display: none; /* Скрываем кнопку на больших экранах */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #f3f2e0;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 1300px) {
+    .burger-btn {
+        display: block;
+        margin-right: 50px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header {
+        background-color: #865B44;
+        
+    }
+
+    header h3, header h3 a {
+        color: #f3f2e0 !important; /* Принудительное применение цвета */
+    }
+    header ul {
+        position: fixed;
+        top: 120px; /* Высота шапки */
+        left: -100%; /* Скрываем меню за пределы экрана */
+        flex-direction: column;
+        width: 100%;
+        max-height: 88vh; /* Оставляем место для шапки */
+        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
+        transition: 0.3s;
+        z-index: 1; /* Убедитесь, что меню под кнопкой */
+        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    header ul li a {
+        font-size: 5vw;
+    }
+}
+
+
+/* main's styles */
+/* Базовые стили */
+main {
+    margin-top: 120px;
+    padding: 20px 0;
+    background-color: #f3f2e0;
+    background-size: cover;
+    width: inherit;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.menu ul li {
+    flex: 1;
+    margin: 20px 50px 20px 100px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.menu ul li a:visited {
+    text-decoration: none;
+    color: #242C30;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content div {
+    width: 20%;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid #242C30;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content div:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px rgba(36, 44, 48, 0.5);
+}
+
+.content div img {
+    width: 100%;
+    height: auto;
+}
+
+h6 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main p {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1000px) {
+    main h2 {
+        font-size: 30px;
+    }
+
+    .menu ul li {
+        margin: 10px 25px 10px 50px;
+        font-size: 20px;
+    }
+
+    .content div {
+        width: 40%;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-top: 120px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content div {
+        width: 80%;
+    }
+
+
+}
+
+
+/* footer's styles */
+footer {
+    width: inherit;
+    height: 150px;
+    background-color: #242C30;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+}
+
+footer p{
+    color:#f3f2e0;
+    font-size: 20px;
+}
+
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #242C30;
+    color: #f3f2e0;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#scrollToTopButton:hover {
+    background-color: #555;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/menu.css">
+    <script src="js/menu.js"></script>
+    
+    <title>Coffeed</title>
+</head>
+<body>
+<!-- Код для хедера -->
+    <header>
+        <img src="images/logo.jpg">
+        <h3>Coffeed</h3>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#photogallery">Фотогаллерея</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="places.html">Места в Минске</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+        <button class="burger-btn" onclick="toggleMenu()">☰</button>
+    </header>
+<!-- Код для основной части -->
+    <main>
+        <h2>Меню</h2>
+        <div class="menu">
+            <ul>
+              <li><a href="#" onclick="showCategory('coffee')">Кофе</a></li>
+              <li><a href="#" onclick="showCategory('tea')">Чаи</a></li>
+              <li><a href="#" onclick="showCategory('snacks')">Закуски</a></li>
+              <li><a href="#" onclick="showCategory('desserts')">Десерты</a></li>
+            </ul>
+          </div>
+          
+          <div id="coffee" class="content">
+            <div class="coffees">
+                <img src="images/espresso.jpg">
+                <h6>Эспрессо</h6>
+                <p>30мл / <b>5р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/americano.jpg">
+                <h6>Американо</h6>
+                <p>180мл / <b>5р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/capuchino.jpg">
+                <h6>Капучино</h6>
+                <p>200мл / <b>6.50р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/latte.jpg">
+                <h6>Латте</h6>
+                <p>300мл / <b>7р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/raf.jpg">
+                <h6>Раф</h6>
+                <p>300мл / <b>8р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/d_latte.jpg">
+                <h6>Двойной латте</h6>
+                <p>500мл / <b>12р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/d_capuchino.jpg">
+                <h6>Двойной капучино</h6>
+                <p>400мл / <b>10р</b></p>
+            </div>
+            <div class="coffees">
+                <img src="images/hot_chocolate.jpg">
+                <h6>Горячий шоколад</h6>
+                <p>50мл / <b>5р</b></p>
+            </div>
+          </div>
+          
+
+          <div id="tea" class="content" style="display:none">
+            <div class="teas">
+                <img src="images/bergamot.jpg">
+                <h6>С бергамотом</h6>
+                <p>100мл / <b>10р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/jasmin.jpg">
+                <h6>С жасмином</h6>
+                <p>100мл / <b>10р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/puer.jpg">
+                <h6>Пуэр</h6>
+                <p>100мл / <b>12р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/ulun.jpg">
+                <h6>Улун</h6>
+                <p>100мл / <b>12р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/black_tea.jpg">
+                <h6>Черный чай</h6>
+                <p>100мл / <b>4р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/red_tea.jpg">
+                <h6>Красный чай</h6>
+                <p>100мл / <b>4р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/green_tea.jpg">
+                <h6>Зеленый чай</h6>
+                <p>100мл / <b>4р</b></p>
+            </div>
+            <div class="teas">
+                <img src="images/white_tea.jpg">
+                <h6>Белый чай</h6>
+                <p>100мл / <b>6р</b></p>
+            </div>
+          </div>
+          
+
+          <div id="snacks" class="content" style="display:none">
+            <div class="snack">
+                <img src="images/sand_s_kuricey.jpg">
+                <h6>Сэндвич с курицей</h6>
+                <p>150г / <b>10р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/sand_s_bekonom.jpg">
+                <h6>Сэндвич с беконом</h6>
+                <p>150г / <b>10р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/kr_s_vetchinoy.jpg">
+                <h6>Круассан с ветчиной</h6>
+                <p>150г / <b>12р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/kr_s_lososem.jpg">
+                <h6>Круассан с лососем</h6>
+                <p>150г / <b>12р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/br_s_lososem.jpg">
+                <h6>Брускетта с лососем</h6>
+                <p>100г / <b>10р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/br_s_hamonom.jpg">
+                <h6>Брускетта с хамоном</h6>
+                <p>100г / <b>12р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/kapreze.jpg">
+                <h6>Капрезе</h6>
+                <p>350г / <b>20р</b></p>
+            </div>
+            <div class="snack">
+                <img src="images/tart_s_masom_i_gribami.jpg">
+                <h6>Тарталетки с мясом и грибами</h6>
+                <p>60г/ <b>5р</b></p>
+            </div>
+          </div>
+          
+          <div id="desserts" class="content" style="display:none">
+            <div class="dessert">
+                <img src="images/chiscake.jpg">
+                <h6>Чизкейк</h6>
+                <p>200г / <b>15р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/brauni.jpg">
+                <h6>Брауни</h6>
+                <p>200г / <b>15р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/tiramisu.jpg">
+                <h6>Тирамису</h6>
+                <p>150г / <b>12р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/kr_barhat.jpg">
+                <h6>Красный бархат</h6>
+                <p>150г / <b>12р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/oladi.jpg">
+                <h6>Панкейки</h6>
+                <p>500г / <b>25р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/kr_s_shokoladom.jpg">
+                <h6>Круассан с шоколадом</h6>
+                <p>80г / <b>7р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/fruct_tort.jpg">
+                <h6>Фруктовый торт</h6>
+                <p>350г / <b>18р</b></p>
+            </div>
+            <div class="dessert">
+                <img src="images/ponchik.jpg">
+                <h6>Пончики</h6>
+                <p>3шт по 50г/ <b>10р</b></p>
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <p>
+            2024 ОАО "Кофеёк"<br>
+            220094 г.Минск<br>
+            пр. Рокоссовского 49<br>
+            +375291234567<br>
+            andreymay009@gmail.com<br>
+        </p>
+    </footer>
+
+    <button onclick="topFunction()" id="scrollToTopButton" title="Наверх">
+        <svg fill="#ffffff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.256 23.481c0 0.269 0.106 0.544 0.313 0.75 0.412 0.413 1.087 0.413 1.5 0l14.119-14.119 13.913 13.912c0.413 0.413 1.087 0.413 1.5 0s0.413-1.087 0-1.5l-14.663-14.669c-0.413-0.412-1.088-0.412-1.5 0l-14.869 14.869c-0.213 0.212-0.313 0.481-0.313 0.756z"></path>
+        </svg>
+    </button>
+    <script>
+        // Получаем кнопку
+        var mybutton = document.getElementById("scrollToTopButton");
+        
+        // При прокрутке вниз на 20px от верхней части документа, показываем кнопку
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // При нажатии на кнопку, плавно перематываем на верх
+        function topFunction() {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        </script>
+</body>
+</html>

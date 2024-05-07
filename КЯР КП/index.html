@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Coffeed</title>
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Код для хедера -->
+        <img src="images/logo.jpg" alt="logo">
+        <h3><a href="index.html">Coffeed</a></h3>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#photogallery">Фотогаллерея</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="places.html">Места в Минске</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+        <button class="burger-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    <!-- Код для основной части -->
+    <main>
+        <h1>Coffeed</h1>
+        <h4 id="about">Утро начинается с Coffeed: вдохновение в каждом глотке!</h4>
+        <div id="desc"></div>
+
+        <br><br>
+
+        <br><br><br><br>
+        <h4><a id="photogallery">Фотогаллерея</a></h4>
+        <div class="stroka1">
+            <img src="images/photo1.jpg" alt="photo">
+            <img src="images/photo2.jpg" alt="photo">
+            <img src="images/photo3.jpg" alt="photo">
+            <img src="images/photo4.jpg" alt="photo">
+        </div>
+        <div class="stroka2">
+            <img src="images/photo5.jpg" alt="photo">
+            <img src="images/photo6.jpg" alt="photo">
+            <img src="images/photo7.jpg" alt="photo">
+            <img src="images/photo8.jpg" alt="photo">
+        </div>
+
+    </main>
+    <!-- Код для футера -->
+    <footer>
+        <p>
+            2024 ОАО "Кофеёк"<br>
+            220094 г.Минск<br>
+            пр. Рокоссовского 49<br>
+            +375291234567<br>
+            andreymay009@gmail.com<br>
+        </p>
+    </footer>
+    <button onclick="topFunction()" id="scrollToTopButton" title="Наверх">
+        <svg fill="#ffffff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.256 23.481c0 0.269 0.106 0.544 0.313 0.75 0.412 0.413 1.087 0.413 1.5 0l14.119-14.119 13.913 13.912c0.413 0.413 1.087 0.413 1.5 0s0.413-1.087 0-1.5l-14.663-14.669c-0.413-0.412-1.088-0.412-1.5 0l-14.869 14.869c-0.213 0.212-0.313 0.481-0.313 0.756z">
+            </path>
+        </svg>
+    </button>
+</body>
+
+</html>

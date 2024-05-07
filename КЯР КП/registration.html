@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/registration.css">
+        <script defer src="js/registration.js"></script>
+        <title>Coffeed</title>
+    </head>
+    <body>
+    <!-- Код для хедера -->
+        <header>
+            <img src="images/logo.jpg">
+            <h3><a href="index.html">Coffeed</a></h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#photogallery">Фотогаллерея</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="places.html">Места в Минске</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+            <button class="burger-btn" onclick="toggleMenu()">☰</button>
+        </header>
+
+    <!-- Код для основной части -->
+        <main>
+          
+          <form>
+            <h2>Регистрация для скидки постоянного клиента</h2>
+            <div class="stroka1">
+              <label for="first-name">Имя:</label>
+              <input type="text" id="first-name" name="first-name">
+              <label for="last-name">Фамилия:</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="stroka2">
+              <label for="email">Email Почта:</label>
+              <input type="email" id="email" name="email">
+              <label for="dob">Дата Рождения:</label>
+              <input type="date" id="dob" name="dob">
+            </div>
+            <div  class="stroka3">
+              <label for="phone">Номер Телефона:</label>
+              <input type="tel" id="phone" name="phone">
+            </div>              
+            <div class="subscribe-row">
+              <input type="checkbox" id="subscribe" name="subscribe">
+              <label for="subscribe" class="subscribe-text">Хочу получать рекламную рассылку</label>
+            </div>
+            <button type="submit">Отправить</button>
+
+          </form>
+      
+        </main>
+    
+    <!-- Код для футера -->
+        <footer>
+          <p>
+            2024 ОАО "Кофеёк"<br>
+            220094 г.Минск<br>
+            пр. Рокоссовского 49<br>
+            +375291234567<br>
+            andreymay009@gmail.com<br>
+          </p>
+        </footer>
+
+        <button onclick="topFunction()" id="scrollToTopButton" title="Наверх">
+          <svg fill="#ffffff" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.256 23.481c0 0.269 0.106 0.544 0.313 0.75 0.412 0.413 1.087 0.413 1.5 0l14.119-14.119 13.913 13.912c0.413 0.413 1.087 0.413 1.5 0s0.413-1.087 0-1.5l-14.663-14.669c-0.413-0.412-1.088-0.412-1.5 0l-14.869 14.869c-0.213 0.212-0.313 0.481-0.313 0.756z"></path>
+          </svg>
+      </button>
+    </body>
+    </html>
