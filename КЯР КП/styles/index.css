@@ -90,51 +90,7 @@ h3 a:visited {
     cursor: pointer;
 }
 
-@media (max-width: 1300px) {
-    .burger-btn {
-        display: block;
-        margin-right: 50px;
-        top: 0;
-        right: 0;
-        z-index: 2;
-    }
 
-    header {
-        background-color: #865B44;
-        
-    }
-
-    header h3, header h3 a {
-        color: #f3f2e0 !important; /* Принудительное применение цвета */
-    }
-    header ul {
-        position: fixed;
-        top: 120px; /* Высота шапки */
-        left: -100%; /* Скрываем меню за пределы экрана */
-        flex-direction: column;
-        width: 100%;
-        max-height: 88vh; /* Оставляем место для шапки */
-        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
-        transition: 0.3s;
-        z-index: 1; /* Убедитесь, что меню под кнопкой */
-        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
-    }
-
-    header ul li {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    header ul li a {
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 800px) {
-    header ul li a {
-        font-size: 5vw;
-    }
-}
 
 /* main's styles */
 main {
@@ -221,4 +177,54 @@ footer p{
 
 #scrollToTopButton:hover {
     background-color: #555;
+}
+
+@media (max-width: 1300px) {
+    .burger-btn {
+        display: block;
+        margin-right: 50px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header {
+        background-color: #865B44;
+        
+    }
+
+    header h3, header h3 a {
+        color: #f3f2e0 !important; /* Принудительное применение цвета */
+    }
+    header ul {
+        position: fixed;
+        top: 120px; /* Высота шапки */
+        left: -100%; /* Скрываем меню за пределы экрана */
+        flex-direction: column;
+        width: 100%;
+        max-height: 88vh; /* Оставляем место для шапки */
+        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
+        transition: 0.3s;
+        z-index: 1; /* Убедитесь, что меню под кнопкой */
+        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header ul li a {
+        font-size: 3vw;
+    }
+
+    main h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+    header ul li a {
+        font-size: 5vw;
+    }
 }
