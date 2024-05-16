@@ -81,54 +81,6 @@ header li a:hover {
     
 }
 
-@media (max-width: 1300px) {
-    .burger-btn {
-        display: block;
-        margin-right: 50px;
-        top: 0;
-        right: 0;
-        z-index: 2;
-    }
-
-    header {
-        background-color: #865B44;
-        
-    }
-
-    header h3, header h3 a {
-        color: #f3f2e0 !important; /* Принудительное применение цвета */
-    }
-    header ul {
-        position: fixed;
-        top: 120px; /* Высота шапки */
-        left: -100%; /* Скрываем меню за пределы экрана */
-        flex-direction: column;
-        width: 100%;
-        max-height: 88vh; /* Оставляем место для шапки */
-        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
-        transition: 0.3s;
-        z-index: 1; /* Убедитесь, что меню под кнопкой */
-        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
-    }
-
-    header ul li {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    header ul li a {
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 800px) {
-    header ul li a {
-        font-size: 5vw;
-    }
-}
-
-
-
 /* main's styles */
 main {
     margin-top: 120px; /* чтобы контент не перекрывался header */
@@ -165,7 +117,6 @@ main {
     color: #fff;
 }
 
-
 .images {
     display: flex;
     flex-wrap: wrap;
@@ -198,11 +149,20 @@ h4 {
     text-align: center;
 }
 
-#map {
+#map-container {
     text-align: center;
-    margin: auto;
-    width: 80%;
-    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#map {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    overflow: hidden;
 }
 
 /* footer's styles */
@@ -241,4 +201,68 @@ footer p{
 
 #scrollToTopButton:hover {
     background-color: #555;
+}
+
+@media (max-width: 1300px) {
+    .burger-btn {
+        display: block;
+        margin-right: 50px;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    header {
+        background-color: #865B44;
+        
+    }
+
+    header h3, header h3 a {
+        color: #f3f2e0 !important; /* Принудительное применение цвета */
+    }
+    header ul {
+        position: fixed;
+        top: 120px; /* Высота шапки */
+        left: -100%; /* Скрываем меню за пределы экрана */
+        flex-direction: column;
+        width: 100%;
+        max-height: 88vh; /* Оставляем место для шапки */
+        overflow-y: auto; /* Добавляем прокрутку если содержимое выходит за пределы высоты */
+        transition: 0.3s;
+        z-index: 1; /* Убедитесь, что меню под кнопкой */
+        padding-bottom: 1rem; /* Добавляем немного пространства внизу */
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header ul li a {
+        font-size: 3vw;
+    }
+
+}
+
+@media (max-width: 800px) {
+    header ul li a {
+        font-size: 5vw;
+    }
+
+    #map {
+        width: auto; 
+        height: auto;
+      }
+
+    .images {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images div {
+        width: 80vw;
+        align-items: center;
+    }
 }

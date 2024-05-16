@@ -185,6 +185,11 @@ main {
     margin-bottom: 10px; /* Добавлен нижний отступ между рядами кнопок */
 }
 
+.contact-info button img {
+    width: 50px;
+    height: auto;
+}
+
 /* Добавляем обертку для кнопок, чтобы они располагались в два ряда */
 .buttons-wrapper {
     display: flex;

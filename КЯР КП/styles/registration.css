@@ -145,7 +145,7 @@ main {
     padding: 20px 0;
     background-color: #f3f2e0;
     background-size: cover;
-    width: 100vw;
+    width: inherit;
     justify-content: center;
     align-items: center;
 }

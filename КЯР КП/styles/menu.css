@@ -129,7 +129,6 @@ header li a:hover {
 
 
 /* main's styles */
-/* Базовые стили */
 main {
     margin-top: 120px;
     padding: 20px 0;
@@ -240,10 +239,14 @@ main p {
 
     .content {
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content div {
         width: 80%;
+        align-items: center;
     }
 
 

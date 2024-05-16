@@ -103,9 +103,10 @@ main {
 }
 
 main h1 {
-    font-size: 150px;
+    font-size: 15vw;
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     color: #f3f2e0;
 }
 
@@ -218,13 +219,24 @@ footer p{
         font-size: 3vw;
     }
 
-    main h1 {
-        font-size: 90px;
-    }
 }
 
 @media (max-width: 800px) {
     header ul li a {
         font-size: 5vw;
+    }
+
+    .stroka1 img, .stroka2 img { 
+        display: block;
+        width: 80vw;
+        height: auto;
+        border-radius: 50px;    
+    }
+}
+
+@media (max-width: 450px) {
+    #desc p{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

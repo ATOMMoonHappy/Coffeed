@@ -7,7 +7,7 @@ function showImages(button) {
 
 function showMap(button) {
   document.querySelector('.images').style.display = 'none';
-  document.getElementById('map').style.display = 'block';
+  document.getElementById('map').style.display = 'flex';
   document.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
   button.classList.add('active');
 }
